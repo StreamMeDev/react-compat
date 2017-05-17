@@ -1,0 +1,19 @@
+{
+  "name": "react-15.5.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mochify index.js -r create-react-class -r prop-types"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@streammedev/react-compat": "file:../../../",
+    "create-react-class": "^15.5.3",
+    "mochify": "^3.2.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.0",
+    "react-dom": "^15.5.0"
+  }
+}

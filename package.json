@@ -1,0 +1,41 @@
+{
+  "name": "@streammedev/react-compat",
+  "version": "0.0.0",
+  "description": "A module to maintain components with broad React version compatibility",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "compatiblity"
+  ],
+  "author": "StreamMe",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:StreamMeDev/react-compat.git"
+  },
+  "scripts": {
+    "test": "standard && npm run test-0.12.0 && npm run test-0.13.0 && npm run test-0.14.0 && npm run test-15.5.0",
+    "test-main": "mocha",
+    "test-0.12.0": "cd test/fixtures/react-0.12.0 && npm it",
+    "test-0.13.0": "cd test/fixtures/react-0.13.0 && npm it",
+    "test-0.14.0": "cd test/fixtures/react-0.14.0 && npm it",
+    "test-15.5.0": "cd test/fixtures/react-15.5.0 && npm it",
+    "preversion": "npm test",
+    "postpublish": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "create-react-class": "^15.5.3",
+    "mocha": "^3.4.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-test-renderer": "^15.5.4",
+    "standard": "^10.0.2"
+  },
+  "dependencies": {
+    "semver": "^5.3.0"
+  },
+  "peerDependencies": {
+    "react": "*"
+  }
+}

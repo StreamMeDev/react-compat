@@ -1,0 +1,18 @@
+{
+  "name": "react-0.14.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mochify index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@streammedev/react-compat": "file:../../../",
+    "mochify": "^3.2.1",
+    "react": "^0.14.0",
+    "react-addons-test-utils": "^0.14.0",
+    "react-dom": "^0.14.9"
+  }
+}

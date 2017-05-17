@@ -1,10 +1,18 @@
 # React Runtime Compatibility Layer
 
-[![js-happiness-style](https://img.shields.io/badge/code%20style-happiness-brightgreen.svg)](https://github.com/JedWatson/happiness)
+[![NPM Version](https://img.shields.io/npm/v/@streammedev/react-compat.svg)](https://npmjs.org/package/@streammedev/react-compat)
+[![NPM Downloads](https://img.shields.io/npm/dm/@streammedev/react-compat.svg)](https://npmjs.org/package/react-compat)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 A module to maintain components with broad React version compatibility.  This module can be
 used to have React components which are compatible from versions `0.12.0` through `15.5.2`.
 As new versions of react come out we will add to this as we go.
+
+Provides compatibility for:
+
+- Refs: Strings for pre 0.13, functions for after 0.14 and normalizes getting the dom node
+- Create React Class: For after 15.5, includes the standalone module
+- Prop Types: After 15.5 includes the standalone module
 
 ## Install
 
@@ -58,10 +66,11 @@ Here are the other types of version bumps:
 
 For each of these you can run a 'pre' version by prepending to the command, ex `npm version preminor`.
 
-All feature development should be done on a branch off `master`.  When a feature is complete and the pull request approved, publish a 'pre' version of the package for testing across environments.  To install that 'pre' version of the package do the following, where the version number contains the correct 'pre' version:
+All feature development should be done on a branch off `master`.  When a feature is complete and the pull request approved, publish a 'pre' version of the package for testing across environments.
+To install that 'pre' version of the package do the following, where the version number contains the correct 'pre' version:
 
 ```
-$ npm install --save @streamme/react-compat@1.0.0-0
+$ npm install --save @streammedev/react-compat@1.0.0-0
 ```
 
 Running the tests:
